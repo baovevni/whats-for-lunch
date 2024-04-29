@@ -18,7 +18,7 @@ If you have at least 20 minutes but no more than 30 (because you've been working
 If you have more than 30 minutes, you want your program to remind you that this is an intense program after all and you should probably reconsider.
  */
 
-const whatToDoForLunch = function(hungry, availableTime) {
+function whatToDoForLunch(hungry, availableTime) {
   if (!hungry) {
     console.log("Get back to work!");
   } else if (availableTime < 20) {
@@ -28,7 +28,6 @@ const whatToDoForLunch = function(hungry, availableTime) {
   } else {
     console.log("This is a bootcamp and you should reconsider how much time you actually have to spare.");
   }
-
 }
 
 
