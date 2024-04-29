@@ -11,10 +11,24 @@
  * hungry is a Boolean, representing if you're hungry or not.
  * availableTime is a Number representing the time you have for lunch,
  * in minutes.
+ * 
+ * 
+ * If you have less than 20 minutes, you want your program to tell you to pick up a snack or grab something you have ready at home.
+If you have at least 20 minutes but no more than 30 (because you've been working hard and are ahead of schedule), you want your program to tell you that you deserve a break and should take time to cook a tasty meal.
+If you have more than 30 minutes, you want your program to remind you that this is an intense program after all and you should probably reconsider.
  */
 
 const whatToDoForLunch = function(hungry, availableTime) {
-  console.log("I don't know what to do!");
+  if (!hungry) {
+    console.log("Get back to work!");
+  } else if (availableTime < 20) {
+    console.log("Pick up a snack or grab something you have at home.");
+  } else if (availableTime >= 20 && availableTime <= 30) {
+    console.log("You deserve a break and you should take time to cook a tasty meal.");
+  } else {
+    console.log("This is a bootcamp and you should reconsider how much time you actually have to spare.");
+  }
+
 }
 
 
